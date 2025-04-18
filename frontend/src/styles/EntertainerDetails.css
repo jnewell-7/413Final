@@ -1,0 +1,56 @@
+/* ============================================================
+   Entertainer Details – consistent with list card styling
+   ============================================================ */
+
+/* Centered wrapper */
+.entertainer-details-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Card look & hover lift */
+.entertainer-details-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.entertainer-details-card:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+/* Title bar */
+.entertainer-details-card .card-title {
+  margin: 0;
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #007bff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Body padding */
+.entertainer-details-card .card-body {
+  padding: 1rem 1.25rem;
+}
+
+/* Info rows */
+.detail-row {
+  margin-bottom: 0.6rem;
+}
+
+/* Action buttons (Edit / Delete) */
+.entertainer-details-card .btn {
+  margin-right: 0.5rem;   /* space between Edit & Delete */
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  padding: 0.45rem 1rem;
+  white-space: nowrap;
+}
+
+/* Back button below card */
+.back-button-wrapper {
+  text-align: center;
+  margin-top: 1.5rem;
+}

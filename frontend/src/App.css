@@ -1,10 +1,34 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* -----------------------------------------------------------------
+   Global reset & layout skeleton
+------------------------------------------------------------------ */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;              /* make flex maths easier */
 }
 
+/* Flex column:  navbar  +  centered app content  */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* horizontal centering of #root */
+  min-height: 100vh;
+}
+
+/* #root holds everything except the navbar */
+#root {
+  flex: 1;                   /* fill leftover height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* center horizontally */
+  justify-content: center;   /* center vertically — remove if not wanted */
+  width: 100%;
+  text-align: center;        /* easy centering for headings & paragraphs */
+}
+
+/* -----------------------------------------------------------------
+   Demo / logo styles (left from Vite/React template)
+------------------------------------------------------------------ */
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -19,12 +43,8 @@
 }
 
 @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -33,10 +53,5 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+.card         { padding: 2em; }
+.read-the-docs { color: #888; }

@@ -1,0 +1,65 @@
+/* ============================================================
+   Add Entertainer Form – polished card styling
+   ============================================================ */
+
+.add-entertainer-form {
+  max-width: 600px;
+  margin: 1.5rem auto;
+  padding: 1.75rem 2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Headline */
+.add-entertainer-form h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #28a745;          /* green to distinguish from Edit’s blue */
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+/* Labels & inputs */
+.add-entertainer-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  margin-bottom: 0.9rem;
+  color: #333;
+}
+
+.add-entertainer-form input {
+  margin-top: 0.25rem;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  transition: border-color 0.15s ease;
+}
+
+.add-entertainer-form input:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+/* Button row */
+.add-entertainer-form button {
+  min-width: 130px;
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+}
+
+@media (min-width: 576px) {
+  .add-entertainer-form button + button {
+    margin-left: 0.5rem;   /* side‑by‑side spacing */
+  }
+}
+
+@media (max-width: 575.98px) {
+  .add-entertainer-form button {
+    width: 100%;
+    margin-bottom: 0.6rem; /* stack buttons on mobile */
+  }
+}

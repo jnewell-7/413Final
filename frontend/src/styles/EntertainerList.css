@@ -1,0 +1,77 @@
+/* ============================================================
+   Entertainer List Styles
+   ============================================================ */
+
+/* Wrapper: center and side gutters */
+.entertainer-list-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Card appearance and hover */
+.entertainer-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.entertainer-card:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+/* Title bar styling */
+.entertainer-card .card-title {
+  margin: 0;
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #007bff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Card body spacing */
+.entertainer-card .card-body {
+  padding: 1rem 1.25rem;
+}
+
+/* Remove bullet points from any UL inside cards */
+.entertainer-card .list-unstyled,
+.entertainer-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+
+/* Info rows (formerly list items) */
+.ent-row {
+  margin-bottom: 0.4rem;
+}
+
+/* Booking stats text */
+.entertainer-stats {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Buttons inside cards */
+.entertainer-card .btn {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  padding: 0.45rem 1rem;
+}
+
+/* Loading / error state */
+.loading,
+.error {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* Pagination centering */
+.pagination-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 1rem;
+}
